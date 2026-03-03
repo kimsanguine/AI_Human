@@ -1,0 +1,124 @@
+{
+  "course": {
+    "name": "AI Human 100일 과정",
+    "total_days": 100,
+    "start_date": "TO_BE_SET",
+    "current_day": 7
+  },
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "Python 프로그래밍",
+      "subtopics": ["환경 설정", "기초 문법", "함수/제어문", "OOP"],
+      "day_start": 1,
+      "day_end": 6,
+      "weeks": "W1",
+      "phase": 1,
+      "news_keywords": ["Python update", "Python AI", "Jupyter notebook", "VS Code AI", "Python ecosystem", "AI coding tools"],
+      "news_tone": "AI 업계 전반 동향 70% + Python 생태계 30%",
+      "news_count": 2
+    },
+    {
+      "id": "ch02",
+      "title": "Python 전처리 및 시각화",
+      "subtopics": ["NumPy", "Pandas", "Matplotlib", "Seaborn", "데이터 전처리"],
+      "day_start": 7,
+      "day_end": 13,
+      "weeks": "W2",
+      "phase": 1,
+      "news_keywords": ["data preprocessing AI", "pandas update", "data visualization", "AI data pipeline", "Python data science"],
+      "news_tone": "AI 업계 전반 동향 70% + Python 생태계 30%",
+      "news_count": 3
+    },
+    {
+      "id": "ch03",
+      "title": "머신러닝과 딥러닝",
+      "subtopics": ["지도/비지도 학습", "예측 vs 분류", "성능 지표", "CNN", "RNN", "PyTorch"],
+      "day_start": 14,
+      "day_end": 26,
+      "weeks": "W3~W4",
+      "phase": 2,
+      "news_keywords": ["machine learning benchmark", "deep learning", "PyTorch update", "neural network", "CNN application", "GPU training", "AutoML"],
+      "news_tone": "ML/DL 연구 50% + AI 업계 동향 50%",
+      "news_count": 3
+    },
+    {
+      "id": "ch04",
+      "title": "자연어 및 음성 데이터 활용 및 모델 개발",
+      "subtopics": ["NLP 기초", "텍스트 전처리", "토큰화", "임베딩", "Transformer", "BERT", "음성 데이터"],
+      "day_start": 27,
+      "day_end": 53,
+      "weeks": "W5~W9",
+      "phase": 3,
+      "news_keywords": ["NLP", "tokenizer", "Transformer", "BERT", "attention mechanism", "word embedding", "language model", "Korean NLP", "speech recognition", "audio AI"],
+      "news_tone": "NLP/음성 전문 뉴스 60% + AI 업계 동향 40%",
+      "news_count": 4
+    },
+    {
+      "id": "ch05",
+      "title": "음성 데이터 활용 TTS와 STT 모델 개발",
+      "subtopics": ["Tacotron", "VITS", "TTS", "Whisper", "CTC", "STT"],
+      "day_start": 54,
+      "day_end": 63,
+      "weeks": "W10~W11",
+      "phase": 3,
+      "news_keywords": ["TTS", "text to speech", "voice synthesis", "AI voice", "ElevenLabs", "STT", "Whisper", "speech to text", "voice cloning"],
+      "news_tone": "NLP/음성 전문 뉴스 60% + AI 업계 동향 40%",
+      "news_count": 4
+    },
+    {
+      "id": "ch06",
+      "title": "거대 언어 모델을 활용한 자연어 생성",
+      "subtopics": ["Transformer 아키텍처", "Transformer 실습", "LLM 이해", "LLaMA 활용"],
+      "day_start": 64,
+      "day_end": 70,
+      "weeks": "W12",
+      "phase": 4,
+      "news_keywords": ["LLM", "large language model", "GPT", "Claude", "Gemini", "LLaMA", "open source LLM", "Mistral", "fine-tuning", "Ollama"],
+      "news_tone": "LLM/Agent 뉴스 70% + 실무 적용 사례 30%",
+      "news_count": 4
+    },
+    {
+      "id": "ch07",
+      "title": "프롬프트 엔지니어링",
+      "subtopics": ["Few-shot", "Chain of Thought", "System Prompt", "프롬프트 설계"],
+      "day_start": 71,
+      "day_end": 78,
+      "weeks": "W13",
+      "phase": 4,
+      "news_keywords": ["prompt engineering", "chain of thought", "few-shot", "system prompt", "AI prompting", "prompt optimization"],
+      "news_tone": "LLM/Agent 뉴스 70% + 실무 적용 사례 30%",
+      "news_count": 5
+    },
+    {
+      "id": "ch08",
+      "title": "Langchain 활용하기",
+      "subtopics": ["LangChain 개요", "프롬프트 엔지니어링", "메모리 시스템", "문서 처리", "벡터DB", "Tool/Agent", "복합 시스템"],
+      "day_start": 79,
+      "day_end": 90,
+      "weeks": "W14~W15",
+      "phase": 4,
+      "news_keywords": ["LangChain", "AI agent", "tool use", "MCP", "agentic AI", "vector database", "Pinecone", "Chroma", "LLM orchestration"],
+      "news_tone": "LLM/Agent 뉴스 70% + 실무 적용 사례 30%",
+      "news_count": 5
+    },
+    {
+      "id": "ch09",
+      "title": "RAG (Retrieval-Augmented Generation)",
+      "subtopics": ["임베딩", "검색 파이프라인", "RAG 구현", "하이브리드 검색", "평가"],
+      "day_start": 91,
+      "day_end": 100,
+      "weeks": "W16~W17",
+      "phase": 4,
+      "news_keywords": ["RAG", "retrieval augmented generation", "embedding model", "semantic search", "advanced RAG", "hybrid search", "knowledge graph RAG"],
+      "news_tone": "LLM/Agent 뉴스 70% + 실무 적용 사례 30%",
+      "news_count": 5
+    }
+  ],
+  "phases": {
+    "1": {"name": "기초 체력", "chapters": ["ch01", "ch02"], "news_focus": "AI 업계 전반 동향 + Python 생태계"},
+    "2": {"name": "ML/DL 핵심", "chapters": ["ch03"], "news_focus": "ML/DL 연구 + AI 업계 동향"},
+    "3": {"name": "NLP & 음성 심화", "chapters": ["ch04", "ch05"], "news_focus": "NLP/음성 전문 뉴스"},
+    "4": {"name": "LLM & 실전 활용", "chapters": ["ch06", "ch07", "ch08", "ch09"], "news_focus": "LLM/Agent 뉴스 + 실무 적용"}
+  }
+}
