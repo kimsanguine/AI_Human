@@ -16,7 +16,7 @@
       "phase": 1,
       "news_keywords": ["Python update", "Python AI", "Jupyter notebook", "VS Code AI", "Python ecosystem", "AI coding tools"],
       "news_tone": "AI 업계 전반 동향 70% + Python 생태계 30%",
-      "news_count": 2
+      "news_count": 5
     },
     {
       "id": "ch02",
@@ -28,7 +28,7 @@
       "phase": 1,
       "news_keywords": ["data preprocessing AI", "pandas update", "data visualization", "AI data pipeline", "Python data science"],
       "news_tone": "AI 업계 전반 동향 70% + Python 생태계 30%",
-      "news_count": 3
+      "news_count": 5
     },
     {
       "id": "ch03",
@@ -40,7 +40,7 @@
       "phase": 2,
       "news_keywords": ["machine learning benchmark", "deep learning", "PyTorch update", "neural network", "CNN application", "GPU training", "AutoML"],
       "news_tone": "ML/DL 연구 50% + AI 업계 동향 50%",
-      "news_count": 3
+      "news_count": 5
     },
     {
       "id": "ch04",
@@ -52,7 +52,7 @@
       "phase": 3,
       "news_keywords": ["NLP", "tokenizer", "Transformer", "BERT", "attention mechanism", "word embedding", "language model", "Korean NLP", "speech recognition", "audio AI"],
       "news_tone": "NLP/음성 전문 뉴스 60% + AI 업계 동향 40%",
-      "news_count": 4
+      "news_count": 5
     },
     {
       "id": "ch05",
@@ -64,7 +64,7 @@
       "phase": 3,
       "news_keywords": ["TTS", "text to speech", "voice synthesis", "AI voice", "ElevenLabs", "STT", "Whisper", "speech to text", "voice cloning"],
       "news_tone": "NLP/음성 전문 뉴스 60% + AI 업계 동향 40%",
-      "news_count": 4
+      "news_count": 5
     },
     {
       "id": "ch06",
@@ -76,7 +76,7 @@
       "phase": 4,
       "news_keywords": ["LLM", "large language model", "GPT", "Claude", "Gemini", "LLaMA", "open source LLM", "Mistral", "fine-tuning", "Ollama"],
       "news_tone": "LLM/Agent 뉴스 70% + 실무 적용 사례 30%",
-      "news_count": 4
+      "news_count": 5
     },
     {
       "id": "ch07",
