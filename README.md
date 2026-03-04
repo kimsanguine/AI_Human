@@ -49,4 +49,21 @@ AI_Human/
 
 ---
 
-*Powered by Claude Cowork Scheduled Tasks*
+## 저작권 (License)
+
+© 2026 김생근 (Sanguine Kim) | CC BY-NC 4.0
+
+| 콘텐츠 | 라이선스 | 비고 |
+|--------|---------|------|
+| `lectures/` 강의 자료 | CC BY-NC 4.0 | 교육 목적 자유 이용, 상업적 이용 제한 |
+| `news/` 큐레이션 콘텐츠 | CC BY-NC 4.0 | 원본 기사 저작권은 해당 매체에 귀속 |
+| `curriculum/` 설정 파일 | MIT | 자유 사용 |
+
+교육·학술 목적으로 자유롭게 이용할 수 있습니다. 상업적 이용은 별도 문의 바랍니다.
+
+**문의:** kimsanguine@gmail.com
+
+---
+
+**김생근** | AI Human 튜터
+AI B2B/B2C SaaS CPO, 20년 프로덕트 매니저. AI Dubbing·Avatar·Agentic AI 제품을 리딩하며 AI 네이티브 사고를 실무에 적용하고 있습니다.
