@@ -1,7 +1,6 @@
 # Daily AI Paper Recommendations
 
 > **Date:** 2026-04-03
-> **Curriculum Day:** 1/27
 > **Module:** Machine Learning and Deep Learning
 > **Topic:** Classical ML Algorithms and Foundations
 
