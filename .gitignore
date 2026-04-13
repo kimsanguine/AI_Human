@@ -12,3 +12,7 @@ __pycache__/
 *.pyo
 .env
 .venv/
+
+# Claude Config
+CLAUDE.md
+SKILL.md
