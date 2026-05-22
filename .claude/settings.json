@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "SENTINEL=\"/tmp/clipping_done_$(date +%Y-%m-%d)\"; if [ -z \"${LLMBRAIN_PAT:-}\" ] || [ -f \"$SENTINEL\" ]; then exit 0; fi; cd /home/user/AI_Human && bash scripts/collect_clipping.sh && touch \"$SENTINEL\"",
+            "timeout": 120,
+            "statusMessage": "Syncing daily clipping to llm-brain-private...",
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}
