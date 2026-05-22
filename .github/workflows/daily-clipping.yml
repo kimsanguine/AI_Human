@@ -1,0 +1,33 @@
+name: Daily AI Clipping
+
+on:
+  schedule:
+    # 매일 오전 6시 KST = 21:00 UTC (전날)
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "클리핑 날짜 (YYYY-MM-DD, 기본값: 오늘)"
+        required: false
+        default: ""
+
+jobs:
+  collect-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout AI_Human
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Run clipping script
+        env:
+          LLMBRAIN_PAT: ${{ secrets.LLMBRAIN_PAT }}
+        run: |
+          chmod +x scripts/collect_clipping.sh
+          DATE_ARG="${{ github.event.inputs.date }}"
+          if [ -n "$DATE_ARG" ]; then
+            ./scripts/collect_clipping.sh "$DATE_ARG"
+          else
+            ./scripts/collect_clipping.sh
+          fi
