@@ -1,0 +1,646 @@
+{
+  "metadata": {
+    "course_name": "AI Human 100일 과정 (RD 기반 20주 재설계)",
+    "total_weeks": 20,
+    "total_days": 100,
+    "total_hours": 800,
+    "start_date": "2026-03-04",
+    "end_date": "2026-05-29",
+    "instructor": "Ethan (Kim Sanguine)",
+    "last_updated": "2026-04-18",
+    "source": "[설계] RD기반 20주 커리큘럼 전체 배치.md"
+  },
+  "phases": [
+    {
+      "phase_id": 1,
+      "phase_name": "Python 기초",
+      "theme": "코딩 체력 구축",
+      "weeks": [1, 2],
+      "total_hours": 80,
+      "chapters": ["ch01", "ch02"],
+      "key_concepts": ["환경설정", "기초문법", "함수/OOP", "NumPy", "Pandas", "시각화"],
+      "gap_address": [],
+      "projects": []
+    },
+    {
+      "phase_id": 2,
+      "phase_name": "ML/DL + NLP",
+      "theme": "AI 기초 체력",
+      "weeks": [3, 4, 5, 6],
+      "total_hours": 160,
+      "chapters": ["ch03", "ch04", "ch05_partial"],
+      "key_concepts": ["지도/비지도학습", "CNN/RNN", "NLP기초", "Transformer", "BERT", "음성신호처리"],
+      "gap_address": ["③ Git 기초 (W3-4 중 2h)"],
+      "projects": []
+    },
+    {
+      "phase_id": 3,
+      "phase_name": "음성AI + PJ1",
+      "theme": "첫 번째 전문성 + 프로젝트",
+      "weeks": [7, 8, 9, 10],
+      "total_hours": 160,
+      "chapters": ["ch05", "ch06_partial"],
+      "key_concepts": ["TTS (Tacotron, VITS)", "STT (Whisper, CTC)", "음성합성", "음성인식"],
+      "gap_address": [],
+      "projects": [
+        {
+          "project_id": "pj01",
+          "project_name": "나만의 음성 모델 만들기",
+          "description": "PERSO AI SDK를 활용하여 음성 모델 구현 (TTS + STT)",
+          "weeks": [8, 9, 10],
+          "hours": 80,
+          "deliverables": [
+            "텍스트→음성 변환 모델",
+            "음성→텍스트 변환 모델",
+            "PERSO AI SDK 통합",
+            "프로젝트 발표"
+          ]
+        }
+      ]
+    },
+    {
+      "phase_id": 4,
+      "phase_name": "LLM + PE + LoRA + PJ2",
+      "theme": "LLM 마스터 + 두 번째 프로젝트",
+      "weeks": [11, 12, 13, 14, 15],
+      "total_hours": 200,
+      "chapters": ["ch06", "ch07", "ch08"],
+      "key_concepts": [
+        "LLM 아키텍처",
+        "LLM API 활용 (Ollama, OpenAI)",
+        "Zero/Few-shot 프롬프팅",
+        "Chain of Thought",
+        "프롬프트 최적화",
+        "LoRA/QLoRA Fine-tuning"
+      ],
+      "gap_address": ["① QLoRA (W13 풀위크 실습)"],
+      "special_events": ["W15: 커리어 특강 (이스트소프트 HR + 기술인력)"],
+      "projects": [
+        {
+          "project_id": "pj02",
+          "project_name": "거대 언어 모델을 활용한 PERSO AI 답변 기능 구현",
+          "description": "LLaMA 기반 답변 생성 모델 + PE 최적화",
+          "weeks": [13, 14, 15],
+          "hours": 100,
+          "deliverables": [
+            "LLaMA Fine-tuning (QLoRA)",
+            "프롬프트 템플릿 설계",
+            "답변 생성 모델 구현",
+            "PERSO AI Live Chat SDK 탑재",
+            "성능 검증",
+            "프로젝트 발표"
+          ]
+        }
+      ]
+    },
+    {
+      "phase_id": 5,
+      "phase_name": "LC + RAG + Agent + PJ3",
+      "theme": "실전 시스템 + 최종 프로젝트",
+      "weeks": [16, 17, 18, 19, 20],
+      "total_hours": 200,
+      "chapters": ["ch08", "ch09"],
+      "key_concepts": [
+        "LangChain 핵심",
+        "메모리 시스템",
+        "문서 처리",
+        "벡터DB 관리",
+        "Tool/Agent 통합",
+        "LangGraph + MCP + CrewAI",
+        "RAG 아키텍처",
+        "하이브리드 검색",
+        "RAG 평가/최적화",
+        "Streamlit 배포"
+      ],
+      "gap_address": [
+        "④ Agent Framework (W17: LangGraph + MCP + CrewAI)",
+        "② Streamlit (W19: PJ3 배포 단계)",
+        "③ Git 심화 (W18 3h)"
+      ],
+      "special_events": ["W20: 최종 프로젝트 발표 + 수료식"],
+      "projects": [
+        {
+          "project_id": "pj03",
+          "project_name": "사전 데이터 기반 PERSO AI의 답변 커스텀하기",
+          "description": "RAG 파이프라인으로 개인 데이터 기반 AI 시스템 구축",
+          "weeks": [18, 19, 20],
+          "hours": 100,
+          "deliverables": [
+            "RAG 파이프라인 설계",
+            "벡터DB 구축 (Chroma/Pinecone)",
+            "하이브리드 검색 구현",
+            "Streamlit 웹 애플리케이션",
+            "배포 및 성능 검증",
+            "포트폴리오 정리",
+            "최종 프로젝트 발표"
+          ]
+        }
+      ]
+    }
+  ],
+  "weekly_schedule": [
+    {
+      "week": 1,
+      "phase": 1,
+      "chapter": "ch01",
+      "title": "Python 프로그래밍",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "OT + 환경설정", "hours": 8, "subtopics": ["Ice Breaking", "팀워크훈련", "Python 설치", "Jupyter/VS Code"]},
+        {"day": 2, "title": "기초문법", "hours": 8, "subtopics": ["변수/자료형", "연산자", "문자열"]},
+        {"day": 3, "title": "제어문", "hours": 8, "subtopics": ["if/else", "for/while", "실습"]},
+        {"day": 4, "title": "함수", "hours": 8, "subtopics": ["함수정의", "인자/반환", "scope"]},
+        {"day": 5, "title": "OOP 기초", "hours": 8, "subtopics": ["클래스/객체", "메서드", "상속", "Git 기초(2h)"]}
+      ]
+    },
+    {
+      "week": 2,
+      "phase": 1,
+      "chapter": "ch02",
+      "title": "Python 전처리 및 시각화",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "NumPy", "hours": 8, "subtopics": ["배열생성", "연산", "인덱싱"]},
+        {"day": 2, "title": "Pandas", "hours": 8, "subtopics": ["DataFrame", "데이터조작", "병합"]},
+        {"day": 3, "title": "데이터 전처리", "hours": 8, "subtopics": ["결측치", "이상값", "정규화"]},
+        {"day": 4, "title": "Matplotlib 기초", "hours": 8, "subtopics": ["선그래프", "히스토그램", "산점도"]},
+        {"day": 5, "title": "Seaborn 심화", "hours": 8, "subtopics": ["히트맵", "박스플롯", "실습"]}
+      ]
+    },
+    {
+      "week": 3,
+      "phase": 2,
+      "chapter": "ch03",
+      "title": "머신러닝과 딥러닝 (Part 1)",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "지도학습 개요", "hours": 8, "subtopics": ["회귀", "분류", "평가지표"]},
+        {"day": 2, "title": "비지도학습", "hours": 8, "subtopics": ["군집화", "차원축소", "PCA"]},
+        {"day": 3, "title": "CNN 기초", "hours": 8, "subtopics": ["합성곱", "풀링", "신경망구조"]},
+        {"day": 4, "title": "RNN 기초", "hours": 8, "subtopics": ["순차데이터", "LSTM", "GRU"]},
+        {"day": 5, "title": "PyTorch 입문", "hours": 8, "subtopics": ["텐서", "자동미분", "실습", "Git 실전(1h)"]}
+      ]
+    },
+    {
+      "week": 4,
+      "phase": 2,
+      "chapter": "ch03 + ch04",
+      "title": "머신러닝과 딥러닝 (Part 2) + NLP 기초",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "딥러닝 최적화", "hours": 8, "subtopics": ["손실함수", "옵티마이저", "배치정규화"]},
+        {"day": 2, "title": "NLP 기초", "hours": 8, "subtopics": ["텍스트전처리", "토큰화", "정규표현식"]},
+        {"day": 3, "title": "형태소 분석", "hours": 8, "subtopics": ["한국어처리", "KoNLPy", "불용어제거"]},
+        {"day": 4, "title": "원-핫/임베딩", "hours": 8, "subtopics": ["원-핫인코딩", "Word2Vec", "FastText"]},
+        {"day": 5, "title": "임베딩 실습", "hours": 8, "subtopics": ["벡터표현", "유사도계산", "시각화"]}
+      ]
+    },
+    {
+      "week": 5,
+      "phase": 2,
+      "chapter": "ch04",
+      "title": "자연어 처리 심화 (Transformer & BERT)",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "Transformer 아키텍처", "hours": 8, "subtopics": ["Self-Attention", "Multi-Head", "Positional Encoding"]},
+        {"day": 2, "title": "BERT 이해", "hours": 8, "subtopics": ["사전학습", "미세조정", "토크나이저"]},
+        {"day": 3, "title": "BERT 실습", "hours": 8, "subtopics": ["감정분석", "개체명인식", "의문응답"]},
+        {"day": 4, "title": "멀티모달 시작", "hours": 8, "subtopics": ["비전+언어", "CLIP", "기초개념"]},
+        {"day": 5, "title": "NLP 종합실습", "hours": 8, "subtopics": ["프로젝트기획", "데이터준비", "모델평가"]}
+      ]
+    },
+    {
+      "week": 6,
+      "phase": 2,
+      "chapter": "ch04 + ch05",
+      "title": "NLP 심화 + 음성AI 기초",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "NLP 고급기법", "hours": 8, "subtopics": ["앙상블", "전이학습", "언어간전달"]},
+        {"day": 2, "title": "음성데이터특성", "hours": 8, "subtopics": ["음파", "주파수", "파형"]},
+        {"day": 3, "title": "음성신호처리", "hours": 8, "subtopics": ["푸리에변환", "스펙트로그램", "librosa"]},
+        {"day": 4, "title": "음성기초실습", "hours": 8, "subtopics": ["오디오로딩", "특성추출", "시각화"]},
+        {"day": 5, "title": "TTS/STT 개요", "hours": 8, "subtopics": ["시스템설명", "모델비교", "API활용"]}
+      ]
+    },
+    {
+      "week": 7,
+      "phase": 3,
+      "chapter": "ch05",
+      "title": "음성합성 (TTS) 모델 개발",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "TTS 이론", "hours": 8, "subtopics": ["Tacotron 아키텍처", "멜스펙트로그램", "보코더"]},
+        {"day": 2, "title": "VITS 모델", "hours": 8, "subtopics": ["정규흐름", "조건부생성", "다중화자"]},
+        {"day": 3, "title": "TTS 실습", "hours": 8, "subtopics": ["모델학습", "음성생성", "품질평가"]},
+        {"day": 4, "title": "STT 이론", "hours": 8, "subtopics": ["Whisper 아키텍처", "CTC손실", "빔서치"]},
+        {"day": 5, "title": "STT 실습", "hours": 8, "subtopics": ["음성인식", "후처리", "정확도평가"]}
+      ]
+    },
+    {
+      "week": 8,
+      "phase": 3,
+      "chapter": "ch05 + ch06",
+      "title": "TTS/STT 종합 + PJ1 시작",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "TTS/STT 종합실습", "hours": 8, "subtopics": ["실시간음성변환", "성능최적화", "배포"]},
+        {"day": 2, "title": "PJ1 기획", "hours": 8, "subtopics": ["요구사항분석", "시스템설계", "팀구성"]},
+        {"day": 3, "title": "PERSO AI SDK", "hours": 8, "subtopics": ["SDK개요", "음성인터페이스", "통합방법"]},
+        {"day": 4, "title": "PJ1 개발시작", "hours": 8, "subtopics": ["프로토타입", "모듈화", "테스트"]},
+        {"day": 5, "title": "LLM 기초입문", "hours": 8, "subtopics": ["LLM이해", "모델생태계", "Ollama설치"]}
+      ]
+    },
+    {
+      "week": 9,
+      "phase": 3,
+      "chapter": "",
+      "title": "PJ1 음성모델 개발 (진행중)",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "TTS모듈개발", "hours": 8, "subtopics": ["모델선택", "파라미터튜닝", "테스트"]},
+        {"day": 2, "title": "STT모듈개발", "hours": 8, "subtopics": ["음성처리파이프라인", "정확도개선", "통합"]},
+        {"day": 3, "title": "음성모델통합", "hours": 8, "subtopics": ["엔드투엔드구현", "지연시간최적화", "메모리최적화"]},
+        {"day": 4, "title": "PERSO AI탑재", "hours": 8, "subtopics": ["SDK통합", "대화플로우", "테스트"]},
+        {"day": 5, "title": "PJ1 코드리뷰", "hours": 8, "subtopics": ["정적분석", "버그수정", "문서화"]}
+      ]
+    },
+    {
+      "week": 10,
+      "phase": 3,
+      "chapter": "",
+      "title": "PJ1 완료 + LLM 기초 심화",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "PJ1 성능검증", "hours": 8, "subtopics": ["벤치마크", "사용자테스트", "최적화"]},
+        {"day": 2, "title": "PJ1 발표준비", "hours": 8, "subtopics": ["슬라이드작성", "시연준비", "문서정리"]},
+        {"day": 3, "title": "LLM 아키텍처", "hours": 8, "subtopics": ["스케일링법칙", "토큰화", "주의메커니즘"]},
+        {"day": 4, "title": "LLM 모델이해", "hours": 8, "subtopics": ["GPT", "LLaMA", "Qwen", "비교"]},
+        {"day": 5, "title": "PJ1 발표 + 회고", "hours": 8, "subtopics": ["발표", "피드백", "학습정리"]}
+      ]
+    },
+    {
+      "week": 11,
+      "phase": 4,
+      "chapter": "ch06 + ch07",
+      "title": "LLM API 활용 + 프롬프트 엔지니어링 (Part 1)",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "Ollama 설치및활용", "hours": 8, "subtopics": ["로컬LLM", "모델다운로드", "API호출"]},
+        {"day": 2, "title": "OpenAI API", "hours": 8, "subtopics": ["ChatAPI", "완성API", "스트리밍"]},
+        {"day": 3, "title": "PE 기초", "hours": 8, "subtopics": ["Zero-shot", "Few-shot", "역할설정"]},
+        {"day": 4, "title": "시스템프롬프트", "hours": 8, "subtopics": ["프롬프트구조", "톤&스타일", "제약조건"]},
+        {"day": 5, "title": "PE 실습1", "hours": 8, "subtopics": ["템플릿작성", "테스트", "개선반복"]}
+      ]
+    },
+    {
+      "week": 12,
+      "phase": 4,
+      "chapter": "ch06 + ch07",
+      "title": "프롬프트 엔지니어링 (Part 2) + LLM 평가",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "Chain of Thought", "hours": 8, "subtopics": ["단계별사고", "self-consistency", "ToT"]},
+        {"day": 2, "title": "구조화출력", "hours": 8, "subtopics": ["JSON스키마", "정형데이터", "파싱"]},
+        {"day": 3, "title": "고급PE기법", "hours": 8, "subtopics": ["프롬프트최적화", "자동프롬프트", "메타프롬프팅"]},
+        {"day": 4, "title": "LLM벤치마크", "hours": 8, "subtopics": ["평가지표", "비교분석", "모델선택"]},
+        {"day": 5, "title": "PE 실습2", "hours": 8, "subtopics": ["복잡작업", "품질평가", "최적화"]}
+      ]
+    },
+    {
+      "week": 13,
+      "phase": 4,
+      "chapter": "",
+      "title": "★ QLoRA Fine-tuning (Gap①)",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "LoRA기초", "hours": 8, "subtopics": ["저계수적응", "파라미터효율", "원리이해"]},
+        {"day": 2, "title": "QLoRA심화", "hours": 8, "subtopics": ["양자화", "메모리절감", "성능비교"]},
+        {"day": 3, "title": "Fine-tuning실습1", "hours": 8, "subtopics": ["LLaMA", "Qwen", "설정&학습"]},
+        {"day": 4, "title": "Fine-tuning실습2", "hours": 8, "subtopics": ["커스텀데이터", "평가", "배포"]},
+        {"day": 5, "title": "QLoRA종합실습", "hours": 8, "subtopics": ["성능최적화", "비용절감", "케이스스터디"]}
+      ]
+    },
+    {
+      "week": 14,
+      "phase": 4,
+      "chapter": "",
+      "title": "PJ2: LLM PERSO AI 답변기능 구현 (진행중)",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "PJ2기획", "hours": 8, "subtopics": ["요구사항", "아키텍처", "데이터준비"]},
+        {"day": 2, "title": "모델선택&FT", "hours": 8, "subtopics": ["기반모델선택", "프롬프트수집", "Fine-tuning"]},
+        {"day": 3, "title": "프롬프트최적화", "hours": 8, "subtopics": ["템플릿설계", "체인링", "평가"]},
+        {"day": 4, "title": "답변생성엔진", "hours": 8, "subtopics": ["스트리밍", "문맥관리", "토큰제한"]},
+        {"day": 5, "title": "통합&테스트", "hours": 8, "subtopics": ["모듈통합", "품질검증", "버그수정"]}
+      ]
+    },
+    {
+      "week": 15,
+      "phase": 4,
+      "chapter": "",
+      "title": "PJ2 완료 + 커리어특강",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "PERSO AI SDK탑재", "hours": 8, "subtopics": ["LiveChat통합", "인터페이스", "테스트"]},
+        {"day": 2, "title": "성능검증", "hours": 8, "subtopics": ["정확도평가", "속도측정", "최적화"]},
+        {"day": 3, "title": "PJ2발표준비", "hours": 8, "subtopics": ["슬라이드", "시연", "자료정리"]},
+        {"day": 4, "title": "커리어특강", "hours": 8, "subtopics": ["이스트소프트HR", "기술인력", "취업전략"]},
+        {"day": 5, "title": "PJ2발표", "hours": 8, "subtopics": ["발표", "피드백", "회고"]}
+      ]
+    },
+    {
+      "week": 16,
+      "phase": 5,
+      "chapter": "ch08",
+      "title": "LangChain 기초~심화",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "LangChain개요", "hours": 8, "subtopics": ["모듈구조", "설치", "기본개념"]},
+        {"day": 2, "title": "프롬프트템플릿", "hours": 8, "subtopics": ["PromptTemplate", "F-string", "체이닝"]},
+        {"day": 3, "title": "메모리시스템", "hours": 8, "subtopics": ["ConversationMemory", "버퍼", "요약"]},
+        {"day": 4, "title": "문서처리", "hours": 8, "subtopics": ["로더", "분할", "변환"]},
+        {"day": 5, "title": "벡터DB통합", "hours": 8, "subtopics": ["Chroma", "Pinecone", "임베딩"]}
+      ]
+    },
+    {
+      "week": 17,
+      "phase": 5,
+      "chapter": "ch08 + ch09",
+      "title": "★ Agent Framework (Gap④) + RAG 기초",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "Tool/Agent기초", "hours": 8, "subtopics": ["도구정의", "에이전트루프", "ReAct"]},
+        {"day": 2, "title": "LangGraph", "hours": 8, "subtopics": ["그래프설계", "노드/엣지", "실행"]},
+        {"day": 3, "title": "MCP기초", "hours": 8, "subtopics": ["모델컨텍스트프로토콜", "도구표준화", "통합"]},
+        {"day": 4, "title": "CrewAI", "hours": 8, "subtopics": ["다중에이전트", "역할정의", "협력"]},
+        {"day": 5, "title": "RAG기초", "hours": 8, "subtopics": ["임베딩", "벡터검색", "파이프라인"]}
+      ]
+    },
+    {
+      "week": 18,
+      "phase": 5,
+      "chapter": "ch09",
+      "title": "RAG 심화 + PJ3 시작",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "하이브리드검색", "hours": 8, "subtopics": ["벡터+키워드", "BM25", "Reciprocal Rank"]},
+        {"day": 2, "title": "RAG평가", "hours": 8, "subtopics": ["정확도", "재현율", "평가메트릭"]},
+        {"day": 3, "title": "RAG최적화", "hours": 8, "subtopics": ["청크크기", "검색순위", "캐싱"]},
+        {"day": 4, "title": "PJ3기획", "hours": 8, "subtopics": ["요구사항", "데이터준비", "아키텍처", "Git심화(3h)"]},
+        {"day": 5, "title": "PJ3시작", "hours": 8, "subtopics": ["벡터DB구축", "문서로딩", "임베딩"]}
+      ]
+    },
+    {
+      "week": 19,
+      "phase": 5,
+      "chapter": "",
+      "title": "PJ3: RAG PERSO AI 개발 + ★ Streamlit (Gap②)",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "RAG파이프라인", "hours": 8, "subtopics": ["검색엔진", "답변생성", "통합"]},
+        {"day": 2, "title": "Streamlit기초", "hours": 8, "subtopics": ["위젯", "상태관리", "배포"]},
+        {"day": 3, "title": "웹앱개발", "hours": 8, "subtopics": ["UI설계", "입출력", "실시간처리"]},
+        {"day": 4, "title": "성능최적화", "hours": 8, "subtopics": ["캐싱", "병렬처리", "모니터링"]},
+        {"day": 5, "title": "배포&테스트", "hours": 8, "subtopics": ["로컬배포", "클라우드배포", "버그수정"]}
+      ]
+    },
+    {
+      "week": 20,
+      "phase": 5,
+      "chapter": "",
+      "title": "PJ3 완료 + 최종 발표 + 수료식",
+      "days": 5,
+      "hours": 40,
+      "topics": [
+        {"day": 1, "title": "포트폴리오정리", "hours": 8, "subtopics": ["문서화", "README", "데모영상"]},
+        {"day": 2, "title": "성능검증", "hours": 8, "subtopics": ["정확도", "속도", "안정성"]},
+        {"day": 3, "title": "최종발표준비", "hours": 8, "subtopics": ["슬라이드", "시연", "피드백대비"]},
+        {"day": 4, "title": "최종프로젝트발표", "hours": 8, "subtopics": ["전체발표", "우수수강생시상", "피드백"]},
+        {"day": 5, "title": "수료식", "hours": 8, "subtopics": ["회고", "취업가이드", "네트워킹"]}
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "project_id": "pj01",
+      "project_name": "나만의 음성 모델 만들기",
+      "phase": 3,
+      "weeks": [8, 9, 10],
+      "total_hours": 80,
+      "description": "PERSO AI SDK를 활용하여 TTS/STT 모델을 구현하고 통합하는 프로젝트",
+      "learning_outcomes": [
+        "음성신호처리 이해",
+        "TTS/STT 모델 선택 및 구현",
+        "성능 최적화",
+        "PERSO AI SDK 통합"
+      ],
+      "deliverables": [
+        "텍스트→음성 변환 모듈",
+        "음성→텍스트 변환 모듈",
+        "PERSO AI SDK 탑재",
+        "프로젝트 문서",
+        "최종 발표"
+      ],
+      "related_chapters": ["ch05"]
+    },
+    {
+      "project_id": "pj02",
+      "project_name": "거대 언어 모델을 활용한 PERSO AI 답변 기능 구현",
+      "phase": 4,
+      "weeks": [13, 14, 15],
+      "total_hours": 100,
+      "description": "LLaMA 기반 Fine-tuning과 프롬프트 엔지니어링으로 커스텀 답변 생성 시스템 구축",
+      "learning_outcomes": [
+        "LLM 아키텍처 이해",
+        "QLoRA Fine-tuning 실무",
+        "프롬프트 최적화",
+        "답변 품질 평가",
+        "PERSO AI Live Chat 통합"
+      ],
+      "deliverables": [
+        "LLaMA Fine-tuning 모델",
+        "프롬프트 템플릿 라이브러리",
+        "답변 생성 엔진",
+        "성능 평가 보고서",
+        "최종 발표"
+      ],
+      "related_chapters": ["ch06", "ch07"]
+    },
+    {
+      "project_id": "pj03",
+      "project_name": "사전 데이터 기반 PERSO AI의 답변 커스텀하기",
+      "phase": 5,
+      "weeks": [18, 19, 20],
+      "total_hours": 100,
+      "description": "RAG 파이프라인으로 개인 데이터를 기반으로 한 AI 시스템 구축 및 Streamlit으로 배포",
+      "learning_outcomes": [
+        "RAG 아키텍처 설계",
+        "벡터 DB 관리 및 최적화",
+        "하이브리드 검색 구현",
+        "Streamlit 웹 애플리케이션 개발",
+        "프로덕션 배포"
+      ],
+      "deliverables": [
+        "RAG 파이프라인 구현",
+        "벡터 DB 구축",
+        "Streamlit 웹 애플리케이션",
+        "배포된 시스템",
+        "포트폴리오 및 최종 발표"
+      ],
+      "related_chapters": ["ch08", "ch09"]
+    }
+  ],
+  "chapters_index": [
+    {
+      "chapter_id": "ch01",
+      "chapter_name": "Python 프로그래밍",
+      "weeks": [1],
+      "hours": 40,
+      "phase": 1,
+      "key_topics": ["환경설정", "기초문법", "함수/제어문", "OOP"]
+    },
+    {
+      "chapter_id": "ch02",
+      "chapter_name": "Python 전처리 및 시각화",
+      "weeks": [2],
+      "hours": 40,
+      "phase": 1,
+      "key_topics": ["NumPy", "Pandas", "Matplotlib", "Seaborn", "데이터전처리"]
+    },
+    {
+      "chapter_id": "ch03",
+      "chapter_name": "머신러닝과 딥러닝",
+      "weeks": [3, 4],
+      "hours": 48,
+      "phase": 2,
+      "key_topics": ["지도/비지도학습", "CNN", "RNN", "PyTorch", "최적화"]
+    },
+    {
+      "chapter_id": "ch04",
+      "chapter_name": "자연어 및 음성 데이터 활용 및 모델 개발",
+      "weeks": [4, 5, 6],
+      "hours": 96,
+      "phase": 2,
+      "key_topics": ["NLP기초", "텍스트전처리", "임베딩", "Transformer", "BERT", "음성신호처리"]
+    },
+    {
+      "chapter_id": "ch05",
+      "chapter_name": "음성 데이터 활용 TTS와 STT 모델 개발",
+      "weeks": [6, 7, 8],
+      "hours": 64,
+      "phase": 3,
+      "key_topics": ["Tacotron", "VITS", "TTS", "Whisper", "CTC", "STT"]
+    },
+    {
+      "chapter_id": "ch06",
+      "chapter_name": "거대 언어 모델을 활용한 자연어 생성",
+      "weeks": [10, 11, 12],
+      "hours": 64,
+      "phase": 4,
+      "key_topics": ["Transformer아키텍처", "LLM이해", "LLaMA", "API활용"]
+    },
+    {
+      "chapter_id": "ch07",
+      "chapter_name": "프롬프트 엔지니어링",
+      "weeks": [11, 12],
+      "hours": 40,
+      "phase": 4,
+      "key_topics": ["Zero/Few-shot", "ChainOfThought", "시스템프롬프트", "구조화출력"]
+    },
+    {
+      "chapter_id": "ch08",
+      "chapter_name": "LangChain 활용하기",
+      "weeks": [16, 17],
+      "hours": 56,
+      "phase": 5,
+      "key_topics": ["프롬프트템플릿", "메모리시스템", "문서처리", "벡터DB", "Tool/Agent"]
+    },
+    {
+      "chapter_id": "ch09",
+      "chapter_name": "RAG (Retrieval-Augmented Generation)",
+      "weeks": [17, 18],
+      "hours": 52,
+      "phase": 5,
+      "key_topics": ["임베딩", "검색파이프라인", "RAG구현", "하이브리드검색", "평가"]
+    }
+  ],
+  "gaps": [
+    {
+      "gap_id": 1,
+      "gap_name": "QLoRA Fine-tuning",
+      "description": "LLM 커스터마이징을 위한 메모리 효율적 Fine-tuning 기법",
+      "week": 13,
+      "phase": 4,
+      "hours": 40,
+      "integration": "PJ2 'LLM PERSO AI 답변 기능 구현'의 핵심 기술"
+    },
+    {
+      "gap_id": 2,
+      "gap_name": "Streamlit 웹 애플리케이션 개발",
+      "description": "Python 기반 웹 UI 프레임워크로 AI 시스템 배포",
+      "week": 19,
+      "phase": 5,
+      "hours": 8,
+      "integration": "PJ3 'RAG PERSO AI' 배포 단계"
+    },
+    {
+      "gap_id": 3,
+      "gap_name": "Git 버전관리",
+      "description": "협업과 코드 관리를 위한 Git 실무",
+      "week": "1,11,18",
+      "phase": "1,4,5",
+      "hours": 6,
+      "integration": "분산 삽입: 기초(W1-2h) → 실전(W11-1h) → 심화(W18-3h)"
+    },
+    {
+      "gap_id": 4,
+      "gap_name": "Agent Framework (LangGraph + MCP + CrewAI)",
+      "description": "다중 에이전트 시스템 구축을 위한 고급 프레임워크",
+      "week": 17,
+      "phase": 5,
+      "hours": 16,
+      "integration": "LangChain 직후 배치, 과목8 'LangChain 활용하기'의 심화 내용"
+    }
+  ],
+  "statistics": {
+    "total_weeks": 20,
+    "total_phases": 5,
+    "total_chapters": 9,
+    "total_projects": 3,
+    "total_gaps": 4,
+    "total_hours": 800,
+    "hours_by_phase": {
+      "phase1": 80,
+      "phase2": 160,
+      "phase3": 160,
+      "phase4": 200,
+      "phase5": 200
+    },
+    "hours_by_type": {
+      "lectures": 520,
+      "projects": 280,
+      "gaps": 70,
+      "other": 30
+    }
+  }
+}
