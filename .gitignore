@@ -20,8 +20,13 @@ SKILL.md
 # Curriculum (keep only mapping.json)
 curriculum/*.md
 
-# Telegram pending scripts — contain bot token in plaintext, must NEVER be committed
+# Telegram outbox — contain bot token in plaintext, must NEVER be committed
 news/telegram_pending/
+news/telegram_processed/
+news/telegram_failed/
 
 # Local signals cache (HN/GitHub trending raw dumps)
 news/signals/
+
+# Local logs from cron scripts
+scripts/*.log
