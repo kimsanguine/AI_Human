@@ -1,0 +1,11 @@
+# 채점기와 문서 생성기는 표준 라이브러리만 쓴다. 아래는 파서 어댑터용.
+
+# 대조군 (선택)
+pdfplumber>=0.11
+
+# 오픈소스 로컬 파서 (선택, 모델 수 GB 내려받음)
+# paddleocr>=3.0
+# paddlepaddle            # GPU 환경이면 paddlepaddle-gpu
+
+# Upstage Document Parse 는 표준 라이브러리(urllib)로 호출하므로 설치 불필요.
+# export UPSTAGE_API_KEY=up_...
