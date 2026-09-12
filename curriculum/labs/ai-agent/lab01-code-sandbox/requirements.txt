@@ -1,0 +1,3 @@
+# 호스트(에이전트) 쪽에서만 필요합니다.
+# 샌드박스 컨테이너 안의 패키지는 sandbox_image/Dockerfile 에 있습니다.
+anthropic>=0.116.0
